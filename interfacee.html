@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta thhp-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <label class="robot">Robot Arm Control</label>
+        <form action="connect.php" method="POST">
+    <div class="main">
+        <label id="motor1" style="color: rgb(0, 0, 0);" > Motor 1 :</label>
+        <div>
+            <span id="range1">0</span>
+        <input type="range" min="0" max="180" value="0" id="slider" class="s1" name="m1" on mousemove="rangeSlider1(this.value)" onchange="rangeSlider1(this.value)">
+        </div>
+
+        <label style="color: rgb(0, 0, 0);" > Motor 2 :</label >
+         <div>
+            <span id="range2">0</span>
+        <input type="range" min="0" max="180" value="0" id="slider"  class="s2" name="m2" on mousemove="rangeSlider2(this.value)" onchange="rangeSlider2(this.value)">
+        </div>
+
+        <label style="color: rgb(0, 0, 0);" > Motor 3 :</label>
+        <div>
+            <span id="range3">0</span>
+        <input type="range" min="0" max="180" value="0" id="slider"  class="s3"  name="m3" on mousemove="rangeSlider3(this.value)" onchange="rangeSlider3(this.value)">
+        </div>
+
+        <label style="color: rgb(0, 0, 0);" > Motor 4 :</label>
+        <div>
+            <span id="range4">0</span>
+        <input type="range" min="0" max="180" value="0" id="slider"  class="s4" name="m4" on mousemove="rangeSlider4(this.value)" onchange="rangeSlider4(this.value)">
+        </div>
+    
+        <label style="color: rgb(0, 0, 0);" > Motor 5 :</label>
+        <div>
+        <span id="range5">0</span>
+        <input type="range" min="0" max="180" value="0" id="slider"  class="s5" name="m5" on mousemove="rangeSlider5(this.value)" onchange="rangeSlider5(this.value)">
+        </div>
+        <label style="color: rgb(0, 0, 0);" > Motor 6 :</label>
+        <div>
+        <span id="range6">0</span>
+        <input type="range" min="0" max="180" value="0" id="slider"  class="s6" name="m6" on mousemove="rangeSlider6(this.value)" onchange="rangeSlider6(this.value)"> 
+        </div> 
+
+     </div>
+
+    <div class="consraint">
+    <button type="submit "class="bot b1" name="save"> Save</button>
+    <button type="submit "class="bot b2" name="run"> Run</button>
+    </div>
+
+    <div class="consraint2">
+        <button type="submit "class="bot b3" name="forword"> Forword</button>
+        <button type="submit "class="bot b4" name="backword"> Backword</button>
+        <button type="submit "class="bot b5" name="left"> Left</button>
+        <button type="submit "class="bot b6" name="right"> Right</button>
+        <button type="submit "class="bot b7" name="stop"> Stop</button>
+    </div>
+
+
+    <script type="text/javascript">
+      function rangeSlider1(value){
+      document.getElementById('range1').innerHTML = value;
+      }
+      function rangeSlider2(value){
+      document.getElementById('range2').innerHTML = value;
+      }
+      function rangeSlider3(value){
+      document.getElementById('range3').innerHTML = value;
+      }
+      function rangeSlider4(value){
+      document.getElementById('range4').innerHTML = value;
+      }
+      function rangeSlider5(value){
+      document.getElementById('range5').innerHTML = value;
+      }
+      function rangeSlider6(value){
+      document.getElementById('range6').innerHTML = value;
+      }
+      </script>
+      </form>
+</body>
+
+</html>
