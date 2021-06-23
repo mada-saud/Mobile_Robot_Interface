@@ -1,0 +1,69 @@
+body {font-family: sans-serif; background-color: rgb(204, 139, 41);}
+
+.main{width: 40%; margin-left: 5% ; background-image: url(imi.jpg); background-position: center ;
+      background-size: cover; background-repeat: no-repeat; margin-top: 10%;position: relative;
+      height: 450px; width: 390px; border-radius: 10px; padding: 0 65px 0 45px;}
+
+#range1{position: absolute; top: 38px; right: 13px;color: rgb(8, 8, 8);}
+#range2{position: absolute; top: 110px; right: 13px; color: rgb(7, 7, 7);}
+#range3{position: absolute; top: 190px; right: 13px; color: rgb(0, 0, 0);}
+#range4{position: absolute; top: 270px; right: 13px; color: rgb(0, 0, 0);}
+#range5{position: absolute; top: 342px; right: 13px; color: rgb(0, 0, 0);}
+#range6{position: absolute; top: 419px; right: 13px; color: rgb(0, 0, 0);}
+
+#slider{-webkit-appearance: none; width: 100%; margin: 6.5%; height: 7px; outline: none; border-radius: 3px; color:#000;}
+
+.s1 ,.s2,.s3,.s4,.s5,.s6 {-webkit-appearance: none; width: 100%; height: 20px; outline: none; opacity: 0.7; 
+                         background:linear-gradient(90deg,rgb(204, 139, 41) 100%,rgb(214,214,214) 100%);
+                         -webkit-transition: 0.2s; transition: opacity 0.2s; border-radius: 12px;
+                          box-shadow: 0px 4px 20px 1px black;}
+
+.s1:hover,.s2:hover,.s3:hover,.s4:hover,.s5:hover,.s6:hover{ opacity: 1;}
+
+.s1::-webkit-slider-thumb,.s2::-webkit-slider-thumb,.s3::-webkit-slider-thumb,.s4::-webkit-slider-thumb,.s5::-webkit-slider-thumb,.s6::-webkit-slider-thumb
+{-webkit-appearance: none; appearance: none; width: 28px; height: 28px;  background-image:url(imi.jpg);
+ background-position: center ; background-size: cover; background-repeat: no-repeat; border-radius: 50%; cursor: pointer; }
+
+.consraint{ text-align: center; top: 95%; left: 26%; position: absolute; transform: translate(-50%);}
+
+.robot{ text-align: center; top: 15%; left: 59%; position: absolute; font-size: 50px;}
+
+.b1,.b2,.b3,.b4,.b5,.b6,.b7{border-radius: 12px;box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);}
+.b3{text-align: center; top: 38%; left: 75%; position: absolute; transform: translate(-50%);}
+.b4{text-align: center; top: 70%; left: 75%; position: absolute; transform: translate(-50%);}
+.b5{text-align: center; top: 55%; left: 60%; position: absolute; transform: translate(-50%);}
+.b6{text-align: center; top: 55%; left: 90%; position: absolute; transform: translate(-50%);}
+.b7{text-align: center; top: 55%; left: 75%; position: absolute; transform: translate(-50%);}
+
+.bot{background:none; border: 2px solid #000; font-family: "montserrat",sans-serif;
+     text-transform: uppercase;padding: 12px 20px; min-width: 150px; margin: 10px; cursor: pointer; 
+     transition: color 0.4s linear; background-color: rgb(218, 162, 78);}
+
+.bot:hover{color: #fff; background-image:url(imi.jpg); background-position: center ; 
+           background-size: cover; background-repeat: no-repeat;}
+
+
+    @media screen and (max-width:480px){
+        
+        .main{margin-left: 2%;margin-top: 20%;position: relative;height: 340px;width: 150px; border-radius: 10px; padding: 0 30px 0 20px;}
+        
+        .s1::-webkit-slider-thumb,.s2::-webkit-slider-thumb,.s3::-webkit-slider-thumb,.s4::-webkit-slider-thumb,.s5::-webkit-slider-thumb,.s6::-webkit-slider-thumb{
+         width: 21px;height: 21px; border-radius: 50%;}
+        
+        .bot{background:none; border: 2px solid #000;font-family: "montserrat",sans-serif;font-size: 10px;padding: 12px 2px;min-width: 50px;background-color: rgb(218, 162, 78);}
+        .consraint{text-align: center; top: 85%; left: 26%; position: absolute; transform: translate(-50%);}
+        .b3{text-align: center; top: 25%;left: 75%; position: absolute;}
+        .b4{text-align: center; top: 55%; left: 75%; position: absolute;}
+        .b5{text-align: center; top: 40%; left: 60%; position: absolute;}
+        .b6{text-align: center; top: 40%; left: 90%; position: absolute;}
+        .b7{text-align: center; top: 40%; left: 75%; position: absolute;}
+        #slider{ width: 96%; margin: 9%; left: 10px;}
+        #range1{position: absolute; top: 27px; right: 6px; color: rgb(8, 8, 8);}
+        #range2{position: absolute; top: 80px; right: 6px; color: rgb(8, 8, 8);}
+        #range3{position: absolute; top: 130px; right: 6px; color: rgb(8, 8, 8);}
+        #range4{position: absolute; top: 185px; right: 6px; color: rgb(8, 8, 8);}
+        #range5{position: absolute; top: 237px; right: 6px; color: rgb(8, 8, 8);}
+        #range6{position: absolute; top: 290px; right: 6px; color: rgb(8, 8, 8);}
+        .robot{text-align: center; top: 5%; left: 30%; position: absolute; font-size: 24px;}
+        
+        }
