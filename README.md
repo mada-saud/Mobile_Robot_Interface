@@ -1,1 +1,7 @@
 # Mobile_Robot_Interface
+
+I have worked on an interface that contains 5 buttons that control the path of the robotic arm (forward, backward, right, left and stop) and it has been integrated with the control interface of the arm movement. I have used html to design the shape and the shape has been formatted with css code so that it is compatible with the general shape.
+A table for the path of the robot was created in the name of directione in the robot_arm database. I added 5 columns (forward, backward, right, left and stop) and the database was linked with the interface using php so that if the stop button is pressed, a stop word is entered into the database and appears in php page last word added
+And I used the query code to check if the connection was successful, a success message appears, and if it is wrong, an error message appears.
+Then I used the select code to call a column from the directione table in descending order to retrieve the last word added to the column, I applied this to all buttons.
+Before smart phones, web pages were designed only on computer screens, but after the spread of smart phones, they added a feature that makes web pages compatible with devices, which is @media screen. I used it in css code, then the page was reformatted to make it compatible with smart phones, but in order for this feature to work, I added a code meta in the name of viewport in html and this is how an interface was made for smart devices.
